@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Web.css">
+        <title>Continue Web</title>
+    </head>
+        <body>
+            <header>
+                <h2 class = "logo">Zotic Shop</h2>
+                    <nav class="navigation">
+                        <a href="">Contact</a>
+                        <a href="">Stock</a>
+                        <a onclick="register1()">Register</a>
+                        <button class = "btn" onclick="login1()">Login</button>
+                    </nav>
+            </header>
+
+            <div class="warp">
+                <div class="login" id="login1"> 
+                    <section>
+                            <h1>Login</h1>
+                                <span class="close">
+                                    <ion-icon name="close-circle-outline" onclick="Close1()"></ion-icon>
+                                </span>
+                                <div class="inputbox">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <input type="username" required>
+                                    <label for="">Username</label>
+                                </div>
+                                    
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for="">Password</label>
+                                </div>
+                                    
+                                <div class="forget">
+                                    <input type="checkbox">
+                                    <label for="">Remember Me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href=""> Forget Password</a></label>
+                                </div>
+                                    
+                                <button type="submit">Login</button>
+                                    
+                                <div class="register">
+                                    <p>Don't have account? &nbsp;<a onclick="register1()">Register</a></p>
+                                </div>
+                    </section>
+                </div> 
+                
+                <div class="registerpage" id="register1">
+                    <section>
+                        <h1>Register</h1>
+                                <span class="close">
+                                    <ion-icon name="close-circle-outline" onclick="Close1()"></ion-icon>
+                                </span>
+                                <div class="inputbox">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <input type="text" required>
+                                    <label for="">Username</label>
+                                </div>
+                                    
+                                <div class="inputbox">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <input type="email" required>
+                                    <label for="">Email</label>
+                                </div>
+                                
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for="">Password</label>
+                                </div>
+                                    
+                                <div class="inputbox">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                    <input type="password" required>
+                                    <label for="">Confirm password</label>
+                                </div>
+                                    
+                                <div class="forget">
+                                    <input type="checkbox">
+                                    <label for="">I agree to&nbsp;<a href="">terms & conditions</a></label>
+                                </div>
+                                    
+                                <button type="submit">Sign up</button>
+                                    
+                                <div class="register">
+                                    <p>Already have account? &nbsp;<a onclick="login1()">Login</p></a>
+                                </div>
+                    </section>
+                </div>
+            </div>
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+            <script>
+                var x = document.getElementById("login1")
+                var y = document.getElementById("register1")
+
+            function register1(){
+                x.style.opacity = "0"
+                x.style.scale = "0.1"
+                y.style.opacity = "100"
+                y.style.scale = "1.2"
+            }
+            function login1(){
+                y.style.opacity = "0"
+                y.style.scale = "0.1"
+                x.style.opacity = "100"
+                x.style.scale = "1.2"
+            }
+            function Close1(){
+                y.style.scale = "0"
+                x.style.scale = "0"
+            }
+            </script>
+
+        </body>
+</html> 
